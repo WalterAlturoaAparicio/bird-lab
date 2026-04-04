@@ -1,4 +1,16 @@
 raw_data_path: data/raw
 processed_data_path: data/processed
 split_ratio: [0.75, 0.15, 0.10]
+
+#preprocessing
 image_size: 224
+min_confidence: 0.5
+min_bbox_area_ratio: 0.05
+margin_ratio: 0.2
+
+hard_min_confidence:      0.30   # rechazo duro
+hard_min_bbox_area_ratio: 0.02   # rechazo duro
+soft_min_confidence:      0.60   # needs_review
+soft_min_bbox_area_ratio: 0.08   # needs_review
+min_aspect_ratio:         0.50   # needs_review
+max_aspect_ratio:         2.00   # needs_review
