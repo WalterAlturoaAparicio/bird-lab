@@ -127,18 +127,17 @@ Each processed image should store:
 * ✅ Ingestion pipeline completed
 * ✅ YOLO-based cropping implemented
 * ✅ Quality filtering and classification system implemented
-* ⏳ Dataset split pending
+* ✅ Dataset split pending
 * ⏳ Training pipeline pending
 
 ---
 
 ## Next Steps
 
-1. Implement dataset split (75/15/10)
-2. Train baseline model
-3. Identify weak classes via metrics
-4. Review `needs_review` selectively
-5. Iterate dataset improvements
+1. Train baseline model
+2. Identify weak classes via metrics
+3. Review `needs_review` selectively
+4. Iterate dataset improvements
 
 ---
 
