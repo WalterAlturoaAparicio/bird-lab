@@ -20,7 +20,7 @@ Esquema de la tabla `images`:
     processed_at    TEXT       — timestamp ISO 8601
 
 Uso:
-    from src.data.metadata import MetadataDB
+    from src.utils.metadata import MetadataDB
     db = MetadataDB("metadata/metadata.sqlite")
     db.insert(result.to_metadata_dict())
     db.insert_batch([r.to_metadata_dict() for r in results])

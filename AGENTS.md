@@ -17,7 +17,7 @@ The system processes raw image datasets into clean, structured, and model-ready 
 
 ---
 
-## ⚙️ Pipeline Stages
+## Pipeline Stages
 
 ### 1. Ingestion
 

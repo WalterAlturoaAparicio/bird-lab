@@ -87,7 +87,7 @@ Each split must preserve class subfolders.
 
 ## Suggested Implementation
 
-* `src/data/split.py`
+* `src/utils/split.py`
 * function:
 
   ```
