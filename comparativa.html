@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Comparativa Arquitecturas Deep Learning</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #0f172a;
+        color: #e2e8f0;
+    }
+    h1, h2 {
+        color: #38bdf8;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 40px;
+    }
+    th, td {
+        border: 1px solid #334155;
+        padding: 10px;
+        text-align: center;
+    }
+    th {
+        background-color: #1e293b;
+    }
+    tr:nth-child(even) {
+        background-color: #1e293b;
+    }
+    tr:hover {
+        background-color: #334155;
+    }
+</style>
+</head>
+<body>
+
+<h1>Comparativa de Arquitecturas Deep Learning</h1>
+
+<h2>🔥 Modelos de Alta Precisión (Padre)</h2>
+
+<h3>Convolucionales (CNN)</h3>
+<table>
+    <tr>
+        <th>Arquitectura</th>
+        <th>Precisión</th>
+        <th>Parámetros</th>
+        <th>Costo Computacional</th>
+        <th>Ventajas</th>
+        <th>Uso Ideal</th>
+    </tr>
+    <tr>
+        <td>ResNet-152</td>
+        <td>Muy Alta</td>
+        <td>~60M</td>
+        <td>Alto</td>
+        <td>Evita vanishing gradient</td>
+        <td>Clasificación robusta</td>
+    </tr>
+    <tr>
+        <td>EfficientNet-B7</td>
+        <td>Muy Alta</td>
+        <td>~66M</td>
+        <td>Muy Alto</td>
+        <td>Excelente escalabilidad</td>
+        <td>Imagen de alta precisión</td>
+    </tr>
+    <tr>
+        <td>DenseNet-201</td>
+        <td>Alta</td>
+        <td>~20M</td>
+        <td>Alto</td>
+        <td>Reutilización de features</td>
+        <td>Dataset complejo</td>
+    </tr>
+</table>
+
+<h3>Transformers</h3>
+<table>
+    <tr>
+        <th>Arquitectura</th>
+        <th>Precisión</th>
+        <th>Parámetros</th>
+        <th>Costo Computacional</th>
+        <th>Ventajas</th>
+        <th>Uso Ideal</th>
+    </tr>
+    <tr>
+        <td>Vision Transformer (ViT-L)</td>
+        <td>Muy Alta</td>
+        <td>~300M</td>
+        <td>Muy Alto</td>
+        <td>Captura relaciones globales</td>
+        <td>Grandes datasets</td>
+    </tr>
+    <tr>
+        <td>Swin Transformer</td>
+        <td>Muy Alta</td>
+        <td>~88M</td>
+        <td>Alto</td>
+        <td>Jerárquico y eficiente</td>
+        <td>Visión general avanzada</td>
+    </tr>
+    <tr>
+        <td>ConvNeXt</td>
+        <td>Muy Alta</td>
+        <td>~89M</td>
+        <td>Alto</td>
+        <td>Mezcla CNN + Transformer</td>
+        <td>Reemplazo moderno CNN</td>
+    </tr>
+</table>
+
+<h2>⚡ Modelos Livianos (Hijo)</h2>
+
+<h3>Convolucionales (CNN)</h3>
+<table>
+    <tr>
+        <th>Arquitectura</th>
+        <th>Precisión</th>
+        <th>Parámetros</th>
+        <th>Costo Computacional</th>
+        <th>Ventajas</th>
+        <th>Uso Ideal</th>
+    </tr>
+    <tr>
+        <td>MobileNetV3</td>
+        <td>Media-Alta</td>
+        <td>~5M</td>
+        <td>Bajo</td>
+        <td>Optimizado para móviles</td>
+        <td>Apps en tiempo real</td>
+    </tr>
+    <tr>
+        <td>ShuffleNetV2</td>
+        <td>Media</td>
+        <td>~3.5M</td>
+        <td>Muy Bajo</td>
+        <td>Ultra rápido</td>
+        <td>Edge devices</td>
+    </tr>
+    <tr>
+        <td>EfficientNet-B0</td>
+        <td>Alta</td>
+        <td>~5.3M</td>
+        <td>Bajo</td>
+        <td>Buen balance</td>
+        <td>Deploy eficiente</td>
+    </tr>
+</table>
+
+<h3>Transformers Livianos</h3>
+<table>
+    <tr>
+        <th>Arquitectura</th>
+        <th>Precisión</th>
+        <th>Parámetros</th>
+        <th>Costo Computacional</th>
+        <th>Ventajas</th>
+        <th>Uso Ideal</th>
+    </tr>
+    <tr>
+        <td>MobileViT</td>
+        <td>Media-Alta</td>
+        <td>~6M</td>
+        <td>Bajo</td>
+        <td>Transformer ligero</td>
+        <td>Móviles</td>
+    </tr>
+    <tr>
+        <td>DeiT-Tiny</td>
+        <td>Media</td>
+        <td>~5M</td>
+        <td>Bajo</td>
+        <td>Entrenamiento eficiente</td>
+        <td>Distillation</td>
+    </tr>
+    <tr>
+        <td>Swin-Tiny</td>
+        <td>Alta</td>
+        <td>~28M</td>
+        <td>Medio</td>
+        <td>Buen trade-off</td>
+        <td>Edge + precisión</td>
+    </tr>
+</table>
+
+<h2>🧠 Estrategia Padre → Hijo (Recomendación Realista)</h2>
+<p>
+Si quieres algo que funcione de verdad (no solo bonito en papel):
+</p>
+<ul>
+    <li><b>Padre (Teacher):</b> EfficientNet-B7 o Swin Transformer</li>
+    <li><b>Hijo (Student):</b> MobileNetV3 o MobileViT</li>
+</ul>
+
+<p>
+Y el truco clave:
+</p>
+<ul>
+    <li>Usa <b>Knowledge Distillation</b></li>
+    <li>No entrenes el hijo desde cero → aprende del padre</li>
+    <li>Optimiza con <b>quantization + pruning</b> si quieres exprimir rendimiento</li>
+</ul>
+
+</body>
+</html>

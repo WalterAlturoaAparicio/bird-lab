@@ -1,12 +1,13 @@
-numpy
+numpy==1.26.4
 pandas
 opencv-python
 Pillow
 tqdm
 pyyaml
 
-torch
-torchvision
+torch==2.2.2
+torchvision==0.17.2
+timm==0.9.16
 
 ultralytics
 
@@ -23,3 +24,5 @@ notebook
 ipykernel
 
 python-dotenv
+
+jupyterlab
