@@ -1,0 +1,7 @@
+Modelo,Params (M),Tamaño (MB),Top-1 (%),Top-5 (%),F1 Macro,Latencia (ms),Acc relativa (%)
+EfficientNet-B4,18.5,71.2,99.65,100.0,0.9959,61.99,100.0%
+MobileNetV3-Base,3.2,,99.42,100.0,0.9936,,99.8%
+MobileNetV3-Distil,3.2,12.5,99.3,100.0,0.9919,17.28,99.6%
+Student-Pruned,3.2,12.5,98.02,,0.9791,17.55,98.4%
+Student-PTQ,3.2,3.7,98.02,0.0,0.9791,17.55,98.4%
+Student-QAT,3.2,3.7,98.02,0.0,0.9791,17.55,98.4%
